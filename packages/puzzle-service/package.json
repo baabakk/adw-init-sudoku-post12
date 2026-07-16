@@ -2,7 +2,20 @@
   "name": "@init-sudoku-post12/puzzle-service",
   "version": "0.0.0",
   "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -b",
+    "start": "node dist/index.js"
+  },
   "dependencies": {
-    "@init-sudoku-post12/contracts": "*"
+    "@init-sudoku-post12/contracts": "*",
+    "express": "^4.19.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "tsx": "^4.19.0",
+    "@types/express": "^4.17.21",
+    "@types/uuid": "^9.0.8"
   }
 }
